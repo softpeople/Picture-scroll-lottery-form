@@ -1,6 +1,6 @@
 ﻿namespace game
 {
-    partial class Form1
+    partial class logo
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -30,12 +30,16 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // logo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(700, 436);
-            this.Name = "Form1";
+            this.BackgroundImage = global::game.Properties.Resources._530b87f7ae88492b9bc669d4b19446ff_th;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(702, 389);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "logo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
 
