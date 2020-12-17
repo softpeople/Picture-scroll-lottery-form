@@ -1,6 +1,6 @@
 ﻿namespace game
 {
-    partial class logo
+    partial class FrmSplash
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -28,9 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.begin = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // logo
+            // begin
+            // 
+            this.begin.Tick += new System.EventHandler(this.begin_Tick);
+            // 
+            // FrmSplash
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -38,14 +44,18 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(702, 389);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "logo";
+            this.Name = "FrmSplash";
+            this.Opacity = 0.3D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.logo_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer begin;
     }
 }
 
